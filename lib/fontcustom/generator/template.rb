@@ -164,15 +164,6 @@ module Fontcustom
 }|
         end
 
-        # For Windows/Chrome <http://stackoverflow.com/a/19247378/1202445>
-        string << %Q|
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: "#{font_name}";
-    src: #{url}("#{path}.svg##{font_name}") format("svg");
-  }
-}|
         string
       end
 
